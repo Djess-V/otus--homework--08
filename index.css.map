@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":"AAAA,EACE,qBAAsB,CAGtB,uCAA4C,CAF5C,QAAS,CACT,SAEF","sources":["webpack://otus--homework--08/./src/styles/styles.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: \"Times New Roman\", Times, serif;\n}\n"],"names":[],"sourceRoot":""}
