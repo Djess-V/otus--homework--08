@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+p {
+  text-align: justify;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: rgb(106, 170, 226);
+  gap: 15px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 900px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+.header {
+  display: flex;
+  background-color: rgb(94, 164, 166);
+  gap: 15px;
+  grid-column: 1/13;
+  padding: 15px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header__image {
+  width: 40%;
+  max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .header__image {
+    width: 80%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 560px) {
+  .header__image {
+    width: 100%;
+  }
+}
+
+.description-header__line {
+  text-align: center;
+}
+
+.description-header__line:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 560px) {
+  .description-header__line {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .description-header__line {
+    font-size: 1.2rem;
+  }
+}
+
+.aside-left {
+  background-color: rgb(184, 47, 141);
+  padding: 15px;
+  grid-column: 1/4;
+}
+
+@media (max-width: 900px) {
+  .aside-left {
+    grid-column: 1/13;
+  }
+}
+
+.aside-left__paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.aside-right {
+  background-color: rgb(222, 119, 17);
+  padding: 15px;
+  grid-column: 10/13;
+}
+
+@media (max-width: 900px) {
+  .aside-right {
+    grid-column: 1/13;
+  }
+}
+
+.aside-right__paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main {
+  background-color: rgb(209, 212, 29);
+  padding: 30px 40px 100px 20px;
+  grid-column: 4/10;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-column: 1/13;
+  }
+}
+
+@media (max-width: 430px) {
+  .main {
+    padding-right: 20px;
+  }
+}
+
+.main__block:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.main-block__title {
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+
+  background-color: rgb(50, 205, 117);
+  padding: 15px;
+  gap: 40px;
+  grid-column: 1/13;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer__paragraph {
+    flex: 1 0 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__paragraph {
+    flex: 1 0 100%;
+  }
+}
