@@ -10,4 +10,4 @@ _**[Развёрнуто здесь](https://djess-v.github.io/otus--homework--0
 
 <h2>Визуальное представление</h2>
 
-<img alt="weather" src="./src/assets/image/layout.jpg" width="385px" height="472px"/>
+<img alt="layout" src="./src/assets/layout.jpg" width="385px" height="472px"/>
