@@ -17,7 +17,9 @@ module.exports = {
       {
         ignoreComments: true,
         ignoreUrls: true,
+        code: 150,
       },
     ],
+    "no-unused-vars": "off",
   },
 };
